@@ -137,7 +137,7 @@ class GradeController extends BaseController
             return $this->DieNotFound();
         }
 
-        $grade->Delete();
+        $grade->Destroy();
 
         return $this->Redirect("/Teacher/Courses/{$courseId}/Students/{$studentId}/Grades");
     }
